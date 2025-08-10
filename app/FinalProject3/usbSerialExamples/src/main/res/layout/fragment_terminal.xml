@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:windowBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toggleGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ToggleButton
+            android:id="@+id/toggle1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/toggle_button_background"
+            android:text="X"
+            android:textOn="X"
+            android:textOff="X" />
+
+        <ToggleButton
+            android:id="@+id/toggle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/toggle_button_background"
+            android:text="X"
+            android:textOn="X"
+            android:textOff="X" />
+
+        <ToggleButton
+            android:id="@+id/toggle3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/toggle_button_background"
+            android:text="X"
+            android:textOn="X"
+            android:textOff="X" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        app:layout_constraintTop_toBottomOf="@id/toggleGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Controller on!"
+        app:layout_constraintTop_toBottomOf="@id/sendButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/ratingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/knobLayout"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/ratingView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.htrh.studio.rotatybutton.RotaryButton
+            android:id="@+id/knob1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:rotary_progress="10"
+            app:rotary_progressMax="127"
+            app:rotary_maxRotateDegrees="290"
+            app:rotary_progressStartDegrees="215" />
+
+        <com.htrh.studio.rotatybutton.RotaryButton
+            android:id="@+id/knob2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:rotary_progress="80"
+            app:rotary_progressMax="127"
+            app:rotary_maxRotateDegrees="290"
+            app:rotary_progressStartDegrees="215" />
+
+        <com.htrh.studio.rotatybutton.RotaryButton
+            android:id="@+id/knob3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:rotary_progress="40"
+            app:rotary_progressMax="127"
+            app:rotary_maxRotateDegrees="290"
+            app:rotary_progressStartDegrees="215" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seekBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/knobLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:rotation="270"
+            android:max="127"
+            android:progress="5" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:rotation="270"
+            android:max="127"
+            android:progress="5" />
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:rotation="270"
+            android:max="127"
+            android:progress="5" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/receiveText"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#969696"
+        android:gravity="start|top"
+        android:maxLines="4"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:text="Receive Area"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/seekBarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

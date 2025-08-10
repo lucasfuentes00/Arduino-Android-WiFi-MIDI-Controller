@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:background="?attr/android:windowBackground"
+    app:startDestination="@+id/navigation_controller">
+
+    <fragment
+        android:id="@+id/navigation_controller"
+        android:name="com.hoho.android.usbserial.examples.ui.controller.ControllerFragment"
+        android:label="@string/title_controller"
+        tools:layout="@layout/fragment_controller" />
+
+
+    <fragment
+        android:id="@+id/navigation_tools"
+        android:name="com.hoho.android.usbserial.examples.ui.tools.ToolsFragment"
+        android:label="@string/title_tools"
+        tools:layout="@layout/fragment_tools" />
+</navigation>

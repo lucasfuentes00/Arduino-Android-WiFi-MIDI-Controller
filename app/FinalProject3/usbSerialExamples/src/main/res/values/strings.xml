@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">USB Serial For Android Example</string>
+    <string name="app_name">Final Project 3</string>
+    <string name="devices">USB Devices</string>
+
+    <string name="title_controller">Controller</string>
+    <string name="title_tools">Tools</string>
+</resources>

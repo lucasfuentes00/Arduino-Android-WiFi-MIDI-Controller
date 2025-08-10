@@ -1,0 +1,37 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.LayoutFinalLight" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White text/icons -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryLight</item>
+    </style>
+    <style name="Theme.LayoutFinalNight" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!-- Primary Colors -->
+    <item name="colorPrimary">#424242</item> <!-- Medium Dark Grey -->
+    <item name="colorPrimaryVariant">#303030</item> <!-- Darker Grey -->
+    <item name="colorOnPrimary">#FFFFFF</item> <!-- White text/icons -->
+
+    <!-- Secondary Colors -->
+    <item name="colorSecondary">#757575</item> <!-- Lighter Grey -->
+    <item name="colorSecondaryVariant">#616161</item>
+    <item name="colorOnSecondary">#FFFFFF</item>
+
+    <!-- Background and Surface -->
+    <item name="android:windowBackground">#6488A6</item> <!-- Dark Grey Background -->
+    <item name="colorSurface">#383838</item> <!-- Surface color for cards/dialogs -->
+    <item name="colorOnSurface">#FFFFFF</item>
+
+    <!-- Status Bar & Navigation Bar -->
+    <item name="android:statusBarColor">#303030</item>
+    <item name="android:navigationBarColor">#303030</item>
+
+    <!-- Accent Color -->
+    <item name="colorAccent">#64B5F6</item> <!-- Light Blue Accent -->
+    </style>
+</resources>

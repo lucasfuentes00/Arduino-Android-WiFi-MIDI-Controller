@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdkVersion 35
+
+    viewBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 35
+        vectorDrawables.useSupportLibrary = true
+
+        missingDimensionStrategy 'device', 'anyDevice'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+    namespace 'com.hoho.android.usbserial.examples'
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation project(':usbSerialForAndroid')  // Remove if not using this module
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+    // Navigation dependencies (use only the latest version)
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.8.8'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.8.8'
+
+    // Material Design components
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.navigation:navigation-fragment:2.8.8'
+    implementation 'androidx.navigation:navigation-ui:2.8.8'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'androidx.core:core-ktx:1.15.0'
+    //implementation 'com.github.ahmmedrejowan:RotaryKnob:1.0.1' // Check for the latest version
+
+    //implementation 'com.codevblocks:android-knob:1.0.1'
+    implementation 'com.github.hiennv3192:rotarybutton:1.0.5'
+
+
+}

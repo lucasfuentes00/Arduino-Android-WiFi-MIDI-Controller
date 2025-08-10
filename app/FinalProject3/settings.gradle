@@ -1,0 +1,4 @@
+include 'usbSerialForAndroid', 'usbSerialExamples'
+// settings.gradle (o settings.gradle.kts)
+
+

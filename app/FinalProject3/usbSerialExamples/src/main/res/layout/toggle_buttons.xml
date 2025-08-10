@@ -1,0 +1,48 @@
+<LinearLayout android:id="@+id/toggleGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="16dp"
+    android:weightSum="3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ToggleButton
+        android:id="@+id/toggle1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:background="@drawable/toggle_button_background"
+        android:textOff="X"
+        android:textOn="X"
+        android:text="X" />
+
+    <ToggleButton
+        android:id="@+id/toggle2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:background="@drawable/toggle_button_background"
+        android:textOff="X"
+        android:textOn="X"
+        android:text="X" />
+
+    <ToggleButton
+        android:id="@+id/toggle3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:background="@drawable/toggle_button_background"
+        android:textOff="X"
+        android:textOn="X"
+        android:text="X" />
+</LinearLayout>
