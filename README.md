@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 This project implements a **bidirectional communication system** between an **Android smartphone**, an **Arduino microcontroller**, and a **Max for Live receiver** in Ableton Live.  
-It enables real-time interaction between mobile devices, hardware, and music software with **low latency** and **reliable wireless communication**.
+It enables real-time interaction between mobile devices, hardware, and music software with **low latency** and **reliable wireless communication** using UDP.
 
 ![Presentation](assets/Presentation.png)
 
@@ -16,7 +16,7 @@ It enables real-time interaction between mobile devices, hardware, and music sof
 - 🎶 **Max for Live Device**: Routes and processes messages in Ableton Live.
 - ⚡ **Low Latency**: ~50 ms average delay using UDP.
 - 🔄 **Bidirectional Communication**: Real-time message exchange.
-- 🌐 **Wireless Connection**: Seamless computer integration via Wi-Fi.
+- 🌐 **Wireless Connection**: Seamless computer integration via Wi-Fi using UDP connection.
 
 ![System Diagram](assets/Esquema.png)
 
