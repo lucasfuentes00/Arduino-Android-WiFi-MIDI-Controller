@@ -34,22 +34,29 @@ It enables real-time interaction between mobile devices, hardware, and music sof
 ### Arduino Firmware
 - Built using a simple circuit with **3 knobs**, **3 faders**, and **3 buttons**.
 - Sends messages via **USB serial** using the **MIDI 1.0 protocol** (3 bytes: Channel/State, Note, Velocity).
-- Compatible with Arduino Uno or similars.
+- Compatible with Arduino Uno or similar boards.
+- **Location:** `arduino-firmware/MIDI_controller.ino`
 
 ![Circuit](assets/Circuit.png)
 
+---
+
 ### Android Application
-- Written in **Kotlin** (see `app/` folder).
+- Written in **Kotlin**.
 - Two main sections:
   - **Controller** – Connects to the device and mirrors the physical interface.
   - **Tools** – Software-only controls (prototype with 3 adjustable parameters).
+- **Location:** `app/`
 
 ![App Theme](assets/Theme.png)
+
+---
 
 ### Max for Live Device
 - Routes and selects parameters to control in Ableton Live.
 - Parameters are split into selectable controls in the interface.
 - Built with **simple node coding** in Max for Live.
+- **Location:** `max-for-live/UDP2.amxd`
 
 ![Max Code](assets/codigoMax.png)
 ![Max Device](assets/Maxdevice.png)
